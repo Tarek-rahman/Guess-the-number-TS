@@ -1,0 +1,35 @@
+body{
+  background-color: aliceblue;
+}
+.hreader_conteinar{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.hreader_conteinar #againBtn{
+  padding: 5px;
+  height: 30px;
+  width: 80px;
+  cursor: pointer;
+}
+.hero_conteinar{
+  text-align: center;
+}
+.curentEmogi{
+  width: 70px;
+  padding: 10px;
+  font-size: 20px;
+  margin: 0 auto;
+  background-color: white;
+}
+.input_conteinar{
+  /* margin: 0 auto; */
+  text-align: center;
+}
+#checkBtn{
+  cursor: pointer;
+}
+input{
+  padding: 7px;
+  text-align: center;
+}
