@@ -10,24 +10,25 @@ let attemptNum = 0;
 const gaemCheeck = () => {
     const inputvlu = inputBox.value;
     attemptNum += 1;
-    if (+inputBox < rendomNumber) {
+    if (+inputvlu < rendomNumber) {
         inputBox.value = '';
         attempt.innerHTML = `${attemptNum}`;
         curentEmogi.innerHTML = `😔`;
         curentAns.innerHTML = `It's Lowest Number`;
+        inputBox.value = '';
     }
     else if (+inputvlu > rendomNumber) {
-        inputBox.value = '';
         attempt.innerHTML = `${attemptNum}`;
         curentEmogi.innerHTML = `😊`;
         curentAns.innerHTML = `It's Heiest Number`;
-    }
-    else if (+inputBox == rendomNumber) {
         inputBox.value = '';
+    }
+    else if (+inputvlu == rendomNumber) {
         win.innerHTML = '🥳';
         attempt.innerHTML = `${attemptNum}`;
         curentEmogi.innerHTML = `${rendomNumber}`;
         curentAns.innerHTML = `🎉You are Win!`;
+        inputBox.value = '';
     }
 };
 checkBtn.addEventListener('click', () => {
